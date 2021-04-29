@@ -13,16 +13,14 @@ SPIDER_MODULES = ['musigh_downloader.spiders']
 NEWSPIDER_MODULE = 'musigh_downloader.spiders'
 
 # ITEM_PIPELINES = {'scrapy.pipelines.files.FilesPipeline': 1}
-FILES_STORE = r'E:\Download Chrome\2021-04\musigh'
-IMAGES_STORE = r'E:\Download Chrome\2021-04\musigh\images'
+FILES_STORE = r'C:\Users\Public\Downloads'
 LOG_LEVEL = 'WARNING'
-ROBOTSTXT_OBEY=False
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'musigh_downloader (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

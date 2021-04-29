@@ -1,16 +1,10 @@
-import os
-
 import scrapy
 
-# from musigh_downloader.musigh_downloader.items import MusighFileItem
 from musigh_downloader.items import MusighFileItem
-
-# from musigh_downloader.items import MusighImageItem
 
 
 class MusighSpider(scrapy.Spider):
     name = 'musigh'
-    # allowed_domains = ['musigh.com']
     start_urls = ['http://musigh.com/wp-content/uploads/']
 
     def parse(self, response):
