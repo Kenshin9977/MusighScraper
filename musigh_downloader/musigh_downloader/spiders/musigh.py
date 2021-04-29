@@ -1,6 +1,7 @@
 import scrapy
 
 from musigh_downloader.items import MusighFileItem
+# from musigh_downloader.musigh_downloader.items import MusighFileItem
 
 
 class MusighSpider(scrapy.Spider):

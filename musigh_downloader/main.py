@@ -1,6 +1,7 @@
 import os
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
+from .musigh_downloader.spiders.musigh import MusighSpider
 
 
 def get_download_path():
@@ -20,11 +21,8 @@ def main():
     settings = get_project_settings()
     settings.set('FILES_STORE', download_folder)
     process = CrawlerProcess(settings)
-    process.crawl('musigh', domain='musigh.com')
+    process.crawl(MusighSpider)
     process.start()
 
-
-if __name__ == "__main__":
-    main()
-
 # pyinstaller --onefile main.py --name MusighScraper.exe --icon musigh.ico
+# python -m nuitka --onefile --plugin-enable=pylint-warnings --windows-onefile-tempdir main.py
