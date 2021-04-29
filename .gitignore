@@ -1,6 +1,10 @@
 .idea/*
 venv/*
-*/__pycache__/*
-*/build/*
-*/dist/*
+*__pycache__*
+*build/*
+*dist/*
 *.exe.spec
+*.py
+*.ico
+*.exe
+*.dll
