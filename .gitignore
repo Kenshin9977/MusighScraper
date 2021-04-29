@@ -8,3 +8,4 @@ venv/*
 *.ico
 *.exe
 *.dll
+*__init__.py
